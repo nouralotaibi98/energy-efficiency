@@ -1,142 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>بطاقة كفاءة الطاقة – الرئيسية</title>
-  
-  <style>
-    :root{ --mew-primary:#0aa4b5; --mew-accent:#123e7a; --mew-bg:#f4fbfc; --card:#fff; --text:#0f172a; --muted:#5b6b7b; --radius:18px; --shadow:0 10px 30px rgba(8,56,84,.07); --shadow-soft:0 8px 20px rgba(8,56,84,.06) }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--mew-bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Kufi Arabic","Noto Sans Arabic",Tahoma,Arial,sans-serif}
-    a{color:var(--mew-accent);text-decoration:none}
-    header{position:sticky;top:0;z-index:30;background:linear-gradient(90deg,var(--mew-primary),var(--mew-accent));color:#fff;box-shadow:var(--shadow)}
-    .container{max-width:1120px;margin:auto;padding:16px}
-    .topbar{display:flex;align-items:center;gap:12px}
-    .logo{width:44px;height:44px;border-radius:12px;background:#fff;display:grid;place-items:center}
-    .logo svg{width:28px;height:28px;fill:var(--mew-primary)}
-    .title{font-weight:800;font-size:20px}
-    nav{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
-    .pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:10px 14px;border-radius:999px;color:var(--text);cursor:pointer}
-    .pill:hover{background:rgba(255,255,255,.22)}
-    main{padding:26px 0}
-    .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-    @media(max-width:900px){.grid{grid-template-columns:1fr}}
-    .card{background:var(--card);border-radius:var(--radius);padding:16px;border:1px solid #e8f0f3;box-shadow:var(--shadow-soft)}
-    .card h2{margin:0 0 12px;font-size:22px}
-    .field{display:grid;gap:6px;margin-bottom:12px}
-    .field label{font-weight:700}
-    .field input{padding:12px 12px;border:1px solid #d7e3e9;border-radius:12px;font-size:15px}
-    .row{display:flex;gap:10px;flex-wrap:wrap}
-    .btn{display:inline-flex;gap:8px;align-items:center;justify-content:center;padding:12px 16px;border-radius:14px;border:1px solid #e9f3f6;background:#fff;color:var(--mew-accent);box-shadow:var(--shadow-soft);cursor:pointer;font-weight:800}
-    .result{display:grid;gap:10px}
-    .badge{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;border:1px solid #e8eef2;background:#f7fbfd;font-weight:800}
-    .rating{font-size:46px;font-weight:900;letter-spacing:1px}
-    .rating.good{color:#059669}.rating.mid{color:#d97706}.rating.bad{color:#dc2626}
-    .ratingbar{position:relative;margin-top:10px;border-radius:14px;overflow:visible;border:1px solid #e0ebf0;background:#fff;padding:0}
-    .ratingbar img.bar{display:block;width:100%;height:auto}
-    .ship-pointer{position:absolute;left:100%;transform:translateX(6px) translateY(-50%);width:42px;height:42px;display:grid;place-items:center;pointer-events:none}
-    .ship-line{position:absolute;left:100%;width:6px;height:2px;background:#0aa4b5;transform:translateY(-50%);}
-    .ship-pointer svg{width:38px;height:38px;filter:drop-shadow(0 2px 4px rgba(0,0,0,.15))}
-    .ship-note{margin-top:6px;font-size:12px;color:#6b7f90}
-    footer{margin:36px 0 24px;color:#8091a2;font-size:13px;text-align:center}
-  </style>
-
-</head>
-<body>
-  
-  <header>
-    <div class="container">
-      <div class="topbar">
-        <div class="logo" aria-label="شعار">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4zm0 4l-4 2.3v3.6c0 3.5 2.3 7 4 7s4-3.5 4-7V8.3L12 6z"/></svg>
-        </div>
-        <div class="title">بطاقة كفاءة الطاقة للمباني – إدارة الطاقة المتجددة و كفاءة الطاقة</div>
-      </div>
-      <nav>
-        <a class="pill" href="index.html">ما هي البطاقة؟</a>
-        <a class="pill" href="buildings-calculator.html">حاسبة المباني</a>
-        <a class="pill" href="appliance-savings.html">حاسبة الأجهزة</a>
-        <a class="pill" href="faq.html">الأسئلة الشائعة</a>
-      </nav>
-    </div>
-  </header>
-
-  
-
-<main class='container'>
-
-  <!-- HERO -->
-  <section class='card' style='display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:center;margin-bottom:18px'>
-    <div>
-      <div class='badge' style='background:#e6f7fa;border-color:#c9eef4;color:#0a4a55'>مقارنة تصنيفات واضحة من «أ» إلى «ز»</div>
-      <h2 style='margin:.6rem 0'>تعرف على أداء مبناك بسهولة وبأسلوب حديث</h2>
-      <p class='muted'>البطاقة توضح كثافة استهلاك الطاقة السنوي لكل متر مربع، لتساعدك على اتخاذ قرارات أذكى وأكثر استدامة.</p>
-      <div class='row' style='margin-top:12px'>
-        <a class='btn' href='buildings-calculator.html'>ابدأ بحساب المبنى</a>
-        <a class='btn' href='appliance-savings.html'>جرّب حاسبة الأجهزة</a>
-      </div>
-    </div>
-    <div><img src='assets/rating-bar.png' alt='معاينة بطاقة المبنى – تصنيف من أ إلى ز' style='display:block;max-width:100%;height:auto;border-radius:12px'/></div>
-  </section>
-
-  <!-- WHAT IS THE LABEL -->
-  <section class='grid'>
-    <div class='card'>
-      <h2>شنو اهي بطاقة كفاءة الطاقة</h2><p class='muted'>بطاقة كفاءة الطاقة عبارة عن شهادة فنية تُمنح للمبنى بعد إجراء تقييم شامل لاستهلاكه السنوي للطاقة وتشمل مؤشر كثافة الاستهلاك (EUI)، حيث يتم تصنيف مستوى استهلاك المبنى من <b style='color:#0f172a'>أ</b> (أعلى كفاءة) إلى <b style='color:#0f172a'>ز</b> (أقل كفاءة). الهدف هو الشفافية والمقارنة العادلة بين المباني.</p>
-      <ul style='margin:10px 0;padding-inline-start:18px;color:#495969;line-height:1.9'><li>لغة بسيطة و واضحة للمستهلك.</li><li>تساعد على اتخاذ قرارات بناء وتشغيل وصيانة أفضل.</li></ul>
-    </div>
-    <div class='card'>
-      <h2>ليش تهمني البطاقة؟</h2>
-      <div class='row' style='gap:12px;flex-wrap:wrap'>
-        <div class='card' style='flex:1;min-width:220px'>
-          <div class='row' style='align-items:center;gap:8px'><span style='font-size:22px'>📉</span><b>فاتورة أقل</b></div>
-          <p class='muted'>كل ما زادت الكفاءة قل الاستهلاك وانخفضت التكلفة على المدى الطويل.</p>
-        </div>
-        <div class='card' style='flex:1;min-width:220px'>
-          <div class='row' style='align-items:center;gap:8px'><span style='font-size:22px'>🏷️</span><b>قيمة أعلى</b></div>
-          <p class='muted'>مبنى بتصنيف أعلى يزيد جاذبيته في السوق للمستأجرين والمشترين.</p>
-        </div>
-        <div class='card' style='flex:1;min-width:220px'>
-          <div class='row' style='align-items:center;gap:8px'><span style='font-size:22px'>🌿</span><b>أثر بيئي أقل</b></div>
-          <p class='muted'>ترشيد الاستهلاك يقلل الانبعاثات ويحافظ على موارد الكويت.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- HOW IT WORKS -->
-  <section class='card' style='margin-top:18px'>
-    <h2>شلون نحسبها؟</h2>
-    <ol style='margin:0;padding-inline-start:22px;color:#495969;line-height:1.9'>
-      <li><b>ندخل الاستهلاك السنوي</b> بالكيلوواط‑ساعة من الفاتورة أو العدّاد.</li>
-      <li><b>ندخل مساحة المبنى</b> الإجمالية بالمتر المربع.</li>
-      <li><b>نحسب الكثافة (EUI)</b> بقسمة الاستهلاك على المساحة: <code>kWh ÷ m²</code>.</li>
-      <li><b>نحدّد التصنيف</b> من «أ» إلى «ز» حسب القيمة (الأقل = أفضل).</li>
-    </ol>
-    <div class='note'>مثال: 48000 kWh لسنة ومساحة 240 م² → EUI = 200 kWh/م²·سنة.</div>
-  </section>
-
-  <!-- KUWAIT INFO -->
-  <section class='grid' style='margin-top:18px'>
-    <div class='card'>
-      <h2>ملاحظات خاصة بالكويت</h2>
-      <ul style='margin:0;padding-inline-start:18px;color:#495969;line-height:1.9'>
-        <li>سعر الكهرباء السكني: <b>فلسان/ك.و.س</b> (0.002 د.ك).</li>
-        <li>التصنيف «أ» يدل على كفاءة أعلى، و«ز» أقل كفاءة.</li>
-        <li>تقدر تستخدم <a href='appliance-savings.html'>حاسبة الأجهزة</a> لمعرفة التوفير عند الاستبدال.</li>
-      </ul>
-    </div>
-    <div class='card'>
-      <h2>معاينة سريعة للتصنيفات</h2>
-      <img src='assets/rating-bar.png' alt='شريط التصنيفات من أ إلى ز' style='display:block;max-width:100%;height:auto;border-radius:12px;margin-bottom:10px'/>
-      <div class='note'>الألوان من الأخضر إلى الأحمر توضح مستوى الكفاءة. <br>اللون الأخضر أعلى كفاءة، اللون الأحمر أقل كفاءة.</div>
-    </div>
-  </section>
-
-</main>
-
-
-  <footer>كل مبنى له بصمة، وخطوتنا تبدأ من كفاءته</footer>
-</body>
-</html>
