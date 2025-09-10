@@ -1,90 +1,0 @@
-<!DOCTYPE html><html lang="ar" dir="rtl"><head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>الأسئلة الشائعة – بطاقة كفاءة الطاقة</title>
-  <style>
-    :root{
-      --mew-primary:#0aa4b5; --mew-accent:#123e7a; --mew-bg:#f4fbfc; --card:#fff; --text:#0f172a; --muted:#5b6b7b; --radius:14px; --shadow:0 8px 20px rgba(8,56,84,.06);
-    }
-    body{margin:0;padding:0;background:var(--mew-bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Kufi Arabic","Noto Sans Arabic",Tahoma,Arial,sans-serif}
-    header{position:sticky;top:0;z-index:30;background:linear-gradient(90deg,var(--mew-primary),var(--mew-accent));color:#fff;box-shadow:var(--shadow)}
-    .container{max-width:900px;margin:auto;padding:16px}
-    .topbar{display:flex;align-items:center;gap:12px}
-    .logo{width:40px;height:40px;border-radius:12px;background:#fff;display:grid;place-items:center}
-    .logo svg{width:24px;height:24px;fill:var(--mew-primary)}
-    .title{font-weight:800;font-size:18px}
-    nav{margin-top:10px;display:flex;flex-wrap:wrap;gap:8px}
-    .pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:8px 14px;border-radius:999px;color:#fff;cursor:pointer}
-    .pill:hover{background:rgba(255,255,255,.22)}
-    main{padding:28px 0}
-    .accordion{display:grid;gap:12px}
-    details{background:var(--card);border:1px solid #e2ebf0;border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);transition:all .3s ease}
-    details[open]{box-shadow:0 6px 18px rgba(0,0,0,.12);border-color:var(--mew-primary)}
-    summary{font-weight:700;cursor:pointer;list-style:none;display:flex;align-items:center;gap:10px}
-    summary::-webkit-details-marker{display:none}
-    summary::after{content:"＋";margin-inline-start:auto;font-weight:700;color:var(--mew-accent);transition:transform .3s ease}
-    details[open] summary::after{content:"−";transform:rotate(180deg)}
-    details p{margin:10px 0 0;color:var(--muted);line-height:1.6}
-    .qicon{font-size:18px;line-height:1}
-    footer{margin:36px 0 24px;color:#8091a2;font-size:13px;text-align:center}
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <div class="topbar">
-        <div class="logo" aria-label="شعار">
-          <svg viewBox="0 0 24 24"><path d="M12 2l7 4v6c0 5-3.5 9.5-7 10-3.5-.5-7-5-7-10V6l7-4zm0 4l-4 2.3v3.6c0 3.5 2.3 7 4 7s4-3.5 4-7V8.3L12 6z"/></svg>
-        </div>
-        <div class="title">بطاقة كفاءة الطاقة للمباني – وزارة الكهرباء والماء والطاقة المتجددة</div>
-      </div>
-      <nav>
-        <a class="pill" href="index.html">ما هي البطاقة؟</a>
-        <a class="pill" href="buildings-calculator.html">حاسبة المباني</a>
-        <a class="pill" href="appliance-savings.html">حاسبة الأجهزة</a>
-        <a class="pill" href="#" style="background:#fff;color:var(--mew-accent);border-color:#fff">الأسئلة الشائعة</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <h2 style="margin-bottom:20px">الأسئلة الشائعة</h2>
-    <div class="accordion">
-      <details>
-        <summary><span class="qicon">💡</span>شنو معنى كثافة استهلاك الطاقة (EUI)؟</summary>
-        <p>هي كمية الكهرباء المستهلكة في المبنى لكل متر مربع سنوياً، وكل ما كان الرقم أقل كل ما كان المبنى أكفأ.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">📜</span>هل البطاقات إلزامية لجميع المباني في الكويت؟</summary>
-        <p>حالياً يتم إعداد الإطار التنظيمي لتطبيقها تدريجياً، والهدف إنها تصير مرجع موحّد للمباني الجديدة والقائمة.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">🔧</span>شلون أقدر أحسّن تصنيف مبناي؟</summary>
-        <p>عن طريق تحسين العزل الحراري، استخدام أجهزة عالية الكفاءة، والصيانة الدورية للأجهزة.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">🏠</span>ليش يهمني أعرف تصنيف المبنى؟</summary>
-        <p>لأنه يساعدك تتوقّع استهلاكك وفاتورتك، ويزيد من قيمة المبنى بالسوق إذا كان تصنيفه عالي.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">📊</span>هل التصنيف يختلف بين بيت خاص وشقة أو عمارة؟</summary>
-        <p>لا، طريقة الحساب واحدة (kWh/م²·سنة)، لكن تختلف القيم حسب حجم ونوع المبنى.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">⚡</span>شنو الفرق بين تصنيف (أ) وتصنيف (ز) عملياً؟</summary>
-        <p>• (أ): استهلاك قليل جداً وتكلفة أقل.<br>• (ز): استهلاك عالي وتكلفة أكبر.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">🔌</span>هل أقدر أستخدم البطاقات لمقارنة جهازي الكهربائي مع أجهزة ثانية؟</summary>
-        <p>نعم، البطاقات الخاصة بالأجهزة تعطيك نفس المبدأ وتوضح كم تقدر توفّر عند الاستبدال.</p>
-      </details>
-      <details>
-        <summary><span class="qicon">🌍</span>سعر الكهرباء في الكويت رخيص، ليش أركز على الكفاءة؟</summary>
-        <p>لأن الكفاءة تعني راحة أكثر، انبعاثات أقل، وحماية موارد الكويت للأجيال القادمة.</p>
-      </details>
-    </div>
-  </main>
-
-  <footer>مستوحى من أسلوب وزارة الكهرباء والماء والطاقة المتجددة</footer>
-</body>
-</html>
