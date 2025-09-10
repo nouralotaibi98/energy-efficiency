@@ -112,14 +112,14 @@
   
   function classify(eui){
     const v = eui;
-    if (v >= 1  && v <= 20) return 'أ';
-    if (v >= 21 && v <= 35) return 'ب';
-    if (v >= 36 && v <= 50) return 'ج';
-    if (v >= 51 && v <= 66) return 'د';
-    if (v >= 67 && v <= 80) return 'هـ';
-    if (v >= 81 && v <= 92) return 'و';
-    if (v >= 93)            return 'ز';
-    return 'أ';
+    if (v <= 100) return 'أ';
+    if (v >= 101 && v <= 150) return 'ب';
+    if (v >= 151 && v <= 200) return 'ج';
+    if (v >= 201 && v <= 250) return 'د';
+    if (v >= 251 && v <= 300) return 'هـ';
+    if (v >= 301 && v <= 350) return 'و';
+    if (v > 350)            return 'ز';
+    return ' ';
   }
 function ratingTone(letter){ if(['أ','ب','ج'].includes(letter)) return 'good'; if(['د','هـ'].includes(letter)) return 'mid'; return 'bad'; }
 function format(num){ return new Intl.NumberFormat('en-US', { maximumFractionDigits: 2 }).format(num); }
